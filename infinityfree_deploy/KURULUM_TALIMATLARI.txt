@@ -1,0 +1,55 @@
+========================================
+CDrive InfinityFree Kurulum Talimatlari
+========================================
+
+1. VERITABANI KURULUMU
+   - InfinityFree Control Panel'e giris yapin
+   - phpMyAdmin'i acin
+   - if0_37354591_db_notest veritabanini secin
+   - Import sekmesine tiklayin
+   - create_database.sql dosyasini yukleyin
+
+2. FTP BAGLANTISI
+   Host: ftpupload.net
+   Username: if0_37354591
+   Port: 21
+
+3. DOSYA YUKLEME
+   A) htdocs/ klasorundeki TUM dosyalari FTP'de htdocs/ icine yukleyin
+   B) root/ klasorundeki TUM dosyalari FTP'de / (root) icine yukleyin
+
+4. KLASOR YAPISI
+   / (root)
+   ├── app/
+   ├── bootstrap/
+   ├── config/
+   ├── database/
+   ├── resources/
+   ├── routes/
+   ├── storage/
+   ├── vendor/
+   ├── .env
+   └── artisan
+
+   htdocs/
+   ├── index.php
+   ├── .htaccess
+   └── css/
+
+5. KLASOR IZINLERI (FileZilla'da sag tik -> File permissions)
+   - storage/ -> 755 (Recursive)
+   - bootstrap/cache/ -> 755 (Recursive)
+
+6. TEST
+   - https://crty.gt.tc/ adresine gidin
+   - Giris: admin@cdrive.com / admin123
+
+========================================
+Veritabani Bilgileri
+========================================
+Host: sql211.infinityfree.com
+Database: if0_37354591_db_notest
+Username: if0_37354591
+Password: eNNrqyMlb4L
+
+========================================
