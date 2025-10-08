@@ -27,7 +27,7 @@ RUN composer install --no-interaction
 
 # 7. Environment
 ENV APP_ENV=production
-ENV APP_KEY=base64:c4HwcqQdI7n6dem0XGJZjxLYeYjTt5rD5aftSDYmPto=
+ENV APP_KEY=base64:replace_with_key
 ENV APP_DEBUG=false
 ENV APP_URL=https://cdrive-pro.up.railway.app/
 
